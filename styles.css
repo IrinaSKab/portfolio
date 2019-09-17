@@ -1,0 +1,105 @@
+.title {
+	font-size: 20px;
+}
+
+.links {
+	font-size: 12px;
+	display: flex;
+	justify-content: space-between;
+	width: 400px;
+	list-style: none;
+}
+
+.menu-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.link {
+	text-decoration: none;
+	color: #000000;
+}
+
+.subtitle {
+	font-size: 20px;
+}
+
+.header-container {
+	margin: 176px 0 59px 0;
+}
+
+.about {
+	font-size: 12px;
+	margin: 32px 0 0 0;
+	max-width: 400px;
+}
+
+.button {
+	color: #ffffff;
+	font-size: 12px;
+	text-align: center;
+	border: 2px solid: #ffffff;
+	background: transparent;
+	border-radius: 20.2px;
+	padding: 16px 42px 16px 42px;
+}
+
+.header {
+	background-image: url("images/header@2x.jpg");
+	height: 714px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.portfolio-image {
+	width: 308px;
+	height: 340px;
+}
+
+.subtitle-small {
+	font-size: 12px;
+}
+
+.aboutme {
+	display: flex;
+}
+
+.about-me-container {
+	display: flex;
+	max-width: 400px;
+	padding: 40px;
+}
+
+.row {
+	display: flex;
+}
+
+.column {
+	flex: 50%;
+	padding: 40px;
+}
+
+.otstup {
+	margin: 56.2px 0 0 0;
+}
+
+.works {
+    background: #d1bac8;
+}
+
+.latest-works {
+	text-align: center;
+	padding: 50px 0 40px 0;
+}
+
+.images {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	padding: 0 15px 50px 15px;
+}
+
+.work-image {
+	width: 364px;
+	height: 234px;
+}
