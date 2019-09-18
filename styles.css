@@ -38,9 +38,9 @@
 	color: #ffffff;
 	font-size: 12px;
 	text-align: center;
-	border: 2px solid: #ffffff;
+	border: 2px solid #ffffff;
 	background: transparent;
-	border-radius: 20.2px;
+	border-radius: 20px;
 	padding: 16px 42px 16px 42px;
 }
 
@@ -58,6 +58,7 @@
 
 .subtitle-small {
 	font-size: 12px;
+	color: rgba(0, 0, 0, 0.7);
 }
 
 .aboutme {
@@ -80,7 +81,7 @@
 }
 
 .otstup {
-	margin: 56.2px 0 0 0;
+	margin: 56px 0 0 0;
 }
 
 .works {
