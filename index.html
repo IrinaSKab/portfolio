@@ -2,11 +2,12 @@
 
 <html>
 <head>
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <header class="header">
+  <div class="container">
+   <header class="header">
     <div class="menu-container">
       <h1 class="title">Jane Foster</h1>
       <nav>
@@ -21,9 +22,10 @@
       <h2 class="subtitle">HELLO, I'M JANE FOSTER</h2>
       <p class="about">I am a photographer and art director based in Paris currently having a great time working at personal portfolio. 
       I also freelance for many companies on my spare time and help them create joyful digital experiences.</p>
+      <br/>
+      <button class="button">Contact me</button>
+      <button class="button">View works</button>
     </div>
-    <button class="button">Contact me</button>
-    <button class="button">View works</button>
   </header>
   <main>
     <section class="aboutme">
@@ -51,18 +53,18 @@
             <h3 class="subtitle-small">Postent, event photographer assistant
               Paris, France
             </h3>
-            <span class="subtitle-small">2012-2013</span>
+            <span class="years">2012-2013</span>
             <h3 class="subtitle-small">Photof, art director
               Florence, Italy
             </h3>
-            <span class="subtitle-small">2013-2017</span>
+            <span class="years">2013-2017</span>
           </div>
           <div class="column">
             <div class="otstup">
               <h3 class="subtitle-small">Freelance photographer
                 Self-employed
               </h3>
-              <span class="subtitle-small">2017-2019
+              <span class="years">2017-2019
               </span>
             </div>
           </div>
@@ -75,27 +77,47 @@
         <span class="subtitle-small">Projects i’ve been working on.</span>
       </div>
       <ul class="images">
-        <li>
+        <li class="portfolio-item">
           <img src="images/work1.jpg" srcset="images/work1@2x.jpg 2x" class="work-image">
+          <div class="portfolio-hover">
+            <h3 class="portfolio-hover-text">Nature</h3>
+            <a class="portfolio-link">View the project</a>
+          </div>
         </li>
-        <li>
+        <li class="portfolio-item">
           <img src="images/work2.jpg" srcset="images/work2@2x.jpg 2x" class="work-image">
+          <div class="portfolio-hover">
+            <h3 class="portfolio-hover-text">New york night</h3>
+            <a class="portfolio-link">View the project</a>
+          </div>
         </li>
-        <li>
+        <li class="portfolio-item">
           <img src="images/work3.jpg" srcset="images/work3@2x.jpg 2x" class="work-image">
+          <div class="portfolio-hover">
+            <h3 class="portfolio-hover-text">Girl</h3>
+            <a class="portfolio-link">View the project</a>
+          </div>
         </li>
       </ul>
     </section>
     <section>
-      <div>Drop me a line to hire me for freelance projects.</div>
-      <form>
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Email">
-        <input type="text" placeholder="Subject">
-        <textarea placeholder="Message"></textarea>
-        <button>Send message</button>
+      <div class="subtitle-small latest-works">Drop me a line to hire me for freelance projects.</div>
+      <form class="main-section">
+        <div class= "form-section">
+          <div class="form-column">
+            <input type="text" placeholder="Name" class="input">
+            <input type="text" placeholder="Email" class="input">
+            <input type="text" placeholder="Subject" class="input"> 
+          </div>
+          <div class="form-column">   
+            <textarea placeholder="Message" class="textarea"></textarea>
+          </div>
+        </div>
       </form>
+      <button class="form-button">Send message</button>
     </section>
   </main>
+</div>
 </body>
 </html>
+
