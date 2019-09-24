@@ -1,6 +1,28 @@
+@font-face {
+	src: url('fonts/PoppinsReg.ttf');
+	font-family: 'Poppins';
+	font-weight: 400;
+}
+
+@font-face {
+	src: url('fonts/PoppinsLight.ttf');
+	font-family: 'Poppins';
+	font-weight: 300;
+}
+
+@font-face {
+	src: url('fonts/PoppinsSem.ttf');
+	font-family: 'Poppins';
+	font-weight: 600;
+}
+
 .title {
 	font-size: 20px;
-}
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: 4.78px;
+	}
 
 .links {
 	font-size: 12px;
@@ -8,6 +30,16 @@
 	justify-content: space-between;
 	width: 400px;
 	list-style: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 2.8;
+	letter-spacing: 2.87px;
+	}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	font-family: 'Poppins', sans-serif;
 }
 
 .menu-container {
@@ -22,15 +54,23 @@
 
 .subtitle {
 	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 0.9;
+	letter-spacing: 2px;
 }
 
 .header-container {
-	margin: 176px 0 59px 0;
+	position: absolute;
+	top: 243px;
+	left: 34px;
 }
 
 .about {
 	font-size: 12px;
 	margin: 32px 0 0 0;
+	line-height: 1.6;
+	letter-spacing: 0.48px;
 	max-width: 400px;
 }
 
@@ -41,14 +81,25 @@
 	border: 2px solid #ffffff;
 	background: transparent;
 	border-radius: 20px;
-	padding: 16px 42px 16px 42px;
-}
+	width: 212px; 
+	height: 41px;
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 2.8;
+	letter-spacing: 2.87px;
+	}
+
+.contact {
+	background: #ffffff;
+	color: #6a4a4c;
+	}
 
 .header {
 	background-image: url("images/header@2x.jpg");
 	height: 714px;
 	background-repeat: no-repeat;
 	background-size: cover;
+	position: relative;
 }
 
 .portfolio-image {
@@ -59,6 +110,17 @@
 .subtitle-small {
 	font-size: 12px;
 	color: rgba(0, 0, 0, 0.7);
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 0.48px;
+}
+
+.years {
+	font-size: 12px;
+	color: rgba(0, 0, 0, 0.7);
+	font-weight: 300;
+	line-height: 1.5;
+	letter-spacing: 0.48px;
 }
 
 .aboutme {
@@ -67,8 +129,11 @@
 
 .about-me-container {
 	display: flex;
-	max-width: 400px;
 	padding: 40px;
+}
+
+.aboutme-text {
+	max-width: 400px;
 }
 
 .row {
@@ -81,16 +146,15 @@
 }
 
 .otstup {
-	margin: 56px 0 0 0;
+	padding: 40px;
 }
 
 .works {
-    background: #d1bac8;
+	background: #d1bac8;
 }
 
 .latest-works {
 	text-align: center;
-	padding: 50px 0 40px 0;
 }
 
 .images {
@@ -104,3 +168,88 @@
 	width: 364px;
 	height: 234px;
 }
+
+.portfolio-item {
+	position: relative;
+}
+
+.portfolio-item::before {
+     content:'';
+     background: rgba(255, 255, 255, 0.5);
+     display: block;
+     position: absolute;
+     width: 100%;
+	 height: 100%;
+}
+
+.portfolio-hover {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	padding-left: 39px;
+	padding-bottom: 17px;
+}
+
+.portfolio-link {
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 0.48px;
+}
+
+.portfolio-hover-text {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: 3px;
+}
+
+.input {
+	border: none;
+	border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 2.8;
+	letter-spacing: 2.16px;
+	width: 350px;
+	height: 40px;
+}
+
+.textarea {
+	border: none;
+	border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 2.8;
+	letter-spacing: 2.16px;
+	width: 350px;
+	height: 132px;
+}
+
+.main-section {
+    max-width: 752px;
+	margin: 0 auto;
+	display: flex;
+}
+
+.form-section {
+	display: flex;
+}
+
+.form-column {
+	padding: 30px;
+}
+
+.send {
+	border: 2px solid #000000;
+	background: #000000;
+	}
+
+.form-button {
+	text-align: center;
+}
+
+	
