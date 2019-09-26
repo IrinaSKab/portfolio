@@ -22,7 +22,7 @@
 	font-weight: 600;
 	line-height: 1.2;
 	letter-spacing: 4.78px;
-	}
+}
 
 .links {
 	font-size: 12px;
@@ -34,7 +34,7 @@
 	font-weight: 600;
 	line-height: 2.8;
 	letter-spacing: 2.87px;
-	}
+}
 
 .container {
 	max-width: 1200px;
@@ -87,12 +87,12 @@
 	font-weight: 600;
 	line-height: 2.8;
 	letter-spacing: 2.87px;
-	}
+}
 
 .contact {
 	background: #ffffff;
 	color: #6a4a4c;
-	}
+}
 
 .header {
 	background-image: url("images/header@2x.jpg");
@@ -171,15 +171,29 @@
 
 .portfolio-item {
 	position: relative;
+	height: 234px;
+}
+
+.portfolio-item:hover {
+	cursor: pointer;
+}
+.portfolio-item:hover.portfolio-hover {
+	opacity: 1;
+}
+
+.portfolio-item:hover::before {
+	opacity: 1;
 }
 
 .portfolio-item::before {
-     content:'';
-     background: rgba(255, 255, 255, 0.5);
-     display: block;
-     position: absolute;
-     width: 100%;
-	 height: 100%;
+	content:'';
+	background: rgba(255, 255, 255, 0.5);
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all 2s;
 }
 
 .portfolio-hover {
@@ -188,6 +202,8 @@
 	bottom: 0;
 	padding-left: 39px;
 	padding-bottom: 17px;
+	opacity: 0;
+	transition: all 2s;
 }
 
 .portfolio-link {
@@ -217,6 +233,11 @@
 	height: 40px;
 }
 
+.input:focus {
+	outline: none;
+}
+
+
 .textarea {
 	border: none;
 	border-bottom: 5px solid rgba(0, 0, 0, 0.5);
@@ -229,8 +250,12 @@
 	height: 132px;
 }
 
+.textarea:focus {
+	outline: none;
+}
+
 .main-section {
-    max-width: 752px;
+	max-width: 752px;
 	margin: 0 auto;
 	display: flex;
 }
@@ -246,10 +271,9 @@
 .send {
 	border: 2px solid #000000;
 	background: #000000;
-	}
+}
 
 .form-button {
 	text-align: center;
 }
 
-	
