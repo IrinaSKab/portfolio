@@ -16,6 +16,30 @@
 	font-weight: 600;
 }
 
+@keyframes button-animation {
+	0% {
+		border: 2px solid #c5c6e8;
+        background: linear-gradient(50deg, #c5c6e8, #272ae3);
+        color: #ffffff;
+	}
+	100% {
+		border: 2px solid #e9a1ed;
+		background: linear-gradient(50deg, #e9a1ed, #b910c2);
+	    color: #000000;
+	}
+
+}
+
+@keyframes title-animation{
+  0%{
+      transform: translate(0, 0) scale(0.5);
+  }
+
+  100%{
+      transform: translate(210px, 90px) scale(1.5);
+  }
+}
+
 .title {
 	font-size: 20px;
 	text-transform: uppercase;
@@ -24,16 +48,22 @@
 	letter-spacing: 4.78px;
 }
 
+.name {
+    max-width: 100px;
+    animation: title-animation 5s infinite;
+}
+
 .links {
 	font-size: 12px;
 	display: flex;
 	justify-content: space-between;
-	width: 400px;
+	width: 255px;
 	list-style: none;
 	text-transform: uppercase;
 	font-weight: 600;
 	line-height: 2.8;
 	letter-spacing: 2.87px;
+	padding: 10px 40px 0 0;
 }
 
 .container {
@@ -45,6 +75,7 @@
 .menu-container {
 	display: flex;
 	justify-content: space-between;
+	padding: 10px 0 0 40px;
 }
 
 .link {
@@ -62,8 +93,7 @@
 
 .header-container {
 	position: absolute;
-	top: 243px;
-	left: 34px;
+	padding: 140px 0 0 35px;
 }
 
 .about {
@@ -81,17 +111,14 @@
 	border: 2px solid #ffffff;
 	background: transparent;
 	border-radius: 20px;
-	width: 212px; 
+	width: 195px; 
 	height: 41px;
+	margin: 40px 5px 0 0;
 	text-transform: uppercase;
 	font-weight: 600;
 	line-height: 2.8;
 	letter-spacing: 2.87px;
-}
-
-.contact {
-	background: #ffffff;
-	color: #6a4a4c;
+	animation: button-animation 5s infinite ease-in-out;
 }
 
 .header {
@@ -105,6 +132,7 @@
 .portfolio-image {
 	width: 308px;
 	height: 340px;
+	margin: 40px 0 50px 0;
 }
 
 .subtitle-small {
@@ -125,24 +153,28 @@
 
 .aboutme {
 	display: flex;
+	margin: 0 0 0 35px;
 }
 
 .about-me-container {
 	display: flex;
-	padding: 40px;
+	margin: 30px 0 0 55px;
 }
 
 .aboutme-text {
-	max-width: 400px;
+	max-width: 500px;
+	padding: 0 10px 0 0;
 }
 
 .row {
 	display: flex;
+	margin: 35px 0 0 55px;
 }
 
 .column {
 	flex: 50%;
-	padding: 40px;
+	max-width: 250px;
+    margin: 0 135px 0 0;
 }
 
 .otstup {
@@ -151,17 +183,20 @@
 
 .works {
 	background: #d1bac8;
+	margin: 50px 0 0 0;
+	height: 450px;
 }
 
 .latest-works {
 	text-align: center;
+	padding: 45px 0 0 0;
 }
 
 .images {
 	display: flex;
 	justify-content: space-around;
 	list-style: none;
-	padding: 0 15px 50px 15px;
+	padding: 20px 15px 50px 25px;
 }
 
 .work-image {
@@ -177,7 +212,7 @@
 .portfolio-item:hover {
 	cursor: pointer;
 }
-.portfolio-item:hover.portfolio-hover {
+.portfolio-item:hover .portfolio-hover {
 	opacity: 1;
 }
 
@@ -221,7 +256,7 @@
 	letter-spacing: 3px;
 }
 
-.input {
+.input, .textarea {
 	border: none;
 	border-bottom: 5px solid rgba(0, 0, 0, 0.5);
 	text-transform: uppercase;
@@ -229,25 +264,17 @@
 	font-weight: 600;
 	line-height: 2.8;
 	letter-spacing: 2.16px;
-	width: 350px;
-	height: 40px;
+	width: 363px;
+    height: 30px;
+    margin: 35px 0 0 0;
+}
+
+.message {
+	height: 172px;
 }
 
 .input:focus {
 	outline: none;
-}
-
-
-.textarea {
-	border: none;
-	border-bottom: 5px solid rgba(0, 0, 0, 0.5);
-	text-transform: uppercase;
-	font-size: 12px;
-	font-weight: 600;
-	line-height: 2.8;
-	letter-spacing: 2.16px;
-	width: 350px;
-	height: 132px;
 }
 
 .textarea:focus {
@@ -255,9 +282,10 @@
 }
 
 .main-section {
-	max-width: 752px;
+	max-width: 800px;
 	margin: 0 auto;
 	display: flex;
+	height: 248px;
 }
 
 .form-section {
@@ -268,12 +296,13 @@
 	padding: 30px;
 }
 
-.send {
-	border: 2px solid #000000;
-	background: #000000;
-}
-
 .form-button {
 	text-align: center;
+	margin: 0 0 40px 40px;
+}
+
+.send {
+	width: 218px;
+    height: 44px;
 }
 
