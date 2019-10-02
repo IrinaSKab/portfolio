@@ -113,6 +113,7 @@
 	height: 41px;
 	border: 2px solid #ffffff;
 }
+
 .header {
 	background-image: url("images/header@2x.jpg");
 	height: 714px;
@@ -137,12 +138,10 @@
 
 .fix1 {
 	margin: 24px 0 4px 0;
-
 }
 
 .fix2 {
-	margin: 0px 0 12px 0;
-
+	margin: 0 0 12px 0;
 }
 
 .fix3 {
@@ -155,10 +154,6 @@
 }
 
 .fix5 {
-	margin: 0 0 12px 0;
-}
-
-.fix6 {
 	margin: 0 0 7px 0;
 }
 
@@ -237,6 +232,7 @@
 .portfolio-item:hover {
 	cursor: pointer;
 }
+
 .portfolio-item:hover .portfolio-hover {
 	opacity: 1;
 }
