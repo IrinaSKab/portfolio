@@ -17,15 +17,38 @@
 }
 
 
-@keyframes title-animation{
-	0%{
+@keyframes title-animation {
+	0% {
 		transform: translate(0, 0) scale(1);
 	}
 
-	100%{
+	100% {
 		transform: translate(210px, 90px) scale(1.5);
 	}
 }
+
+@keyframes button-animation {
+	0% {
+		color: #ffffff;
+		background: transparent;
+	}
+	100% {
+		color: #6a4a4c;
+		background: #ffffff;
+	}
+}
+
+@keyframes button-animation-send {
+	0% {
+		color: #ffffff;
+		background: #000000;
+	}
+	100% {
+		color: #6a4a4c;
+		background: #ffffff;
+	}
+}
+
 
 .title {
 	font-size: 20px;
@@ -103,14 +126,12 @@
 
 .button:hover {
 	cursor: pointer;
-	border: 2px solid #ffffff;
-	background: #ffffff;
-	color: #6a4a4c;
 	opacity: 0.7;
+	animation: button-animation 3s infinite ease-in-out;
 }
 
 .send:hover {
-	border: 2px solid #000000;
+	animation: button-animation-send 3s infinite ease-in-out;
 }
 
 .button:not(.send) {
