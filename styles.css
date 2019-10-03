@@ -16,25 +16,39 @@
 	font-weight: 600;
 }
 
+
+@keyframes title-animation{
+	0%{
+		transform: translate(0, 0) scale(1);
+	}
+
+	100%{
+		transform: translate(210px, 90px) scale(1.5);
+	}
+}
+
 .title {
 	font-size: 20px;
 	text-transform: uppercase;
 	font-weight: 600;
 	line-height: 1.2;
 	letter-spacing: 4.78px;
-	}
+	max-width: 100px;
+	animation: title-animation 5s infinite;
+}
 
 .links {
 	font-size: 12px;
 	display: flex;
 	justify-content: space-between;
-	width: 400px;
+	width: 255px;
 	list-style: none;
 	text-transform: uppercase;
 	font-weight: 600;
 	line-height: 2.8;
 	letter-spacing: 2.87px;
-	}
+	padding: 10px 40px 0 0;
+}
 
 .container {
 	max-width: 1200px;
@@ -45,6 +59,7 @@
 .menu-container {
 	display: flex;
 	justify-content: space-between;
+	padding: 10px 0 0 40px;
 }
 
 .link {
@@ -57,18 +72,17 @@
 	text-transform: uppercase;
 	font-weight: 600;
 	line-height: 0.9;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
+	margin: 0;
 }
 
 .header-container {
-	position: absolute;
-	top: 243px;
-	left: 34px;
+	padding: 160px 0 0 35px;
 }
 
 .about {
 	font-size: 12px;
-	margin: 32px 0 0 0;
+	margin: 27px 0 0 0;
 	line-height: 1.6;
 	letter-spacing: 0.48px;
 	max-width: 400px;
@@ -76,35 +90,46 @@
 
 .button {
 	color: #ffffff;
+	background: transparent;
 	font-size: 12px;
 	text-align: center;
-	border: 2px solid #ffffff;
-	background: transparent;
 	border-radius: 20px;
-	width: 212px; 
-	height: 41px;
+	margin: 40px 7px 0 0;
 	text-transform: uppercase;
 	font-weight: 600;
 	line-height: 2.8;
-	letter-spacing: 2.87px;
-	}
+	letter-spacing: 4px;
+}
 
-.contact {
+.button:hover {
+	cursor: pointer;
+	border: 2px solid #ffffff;
 	background: #ffffff;
 	color: #6a4a4c;
-	}
+	opacity: 0.7;
+}
+
+.send:hover {
+	border: 2px solid #000000;
+}
+
+.button:not(.send) {
+	width: 195px; 
+	height: 41px;
+	border: 2px solid #ffffff;
+}
 
 .header {
 	background-image: url("images/header@2x.jpg");
 	height: 714px;
 	background-repeat: no-repeat;
 	background-size: cover;
-	position: relative;
 }
 
 .portfolio-image {
 	width: 308px;
 	height: 340px;
+	margin: 25px 0 50px 0;
 }
 
 .subtitle-small {
@@ -112,7 +137,33 @@
 	color: rgba(0, 0, 0, 0.7);
 	font-weight: 600;
 	line-height: 1.5;
-	letter-spacing: 0.48px;
+	letter-spacing: 0.5px;
+	margin: 0;
+}
+
+.fix1 {
+	margin: 24px 0 4px 0;
+}
+
+.fix2 {
+	margin: 0 0 12px 0;
+}
+
+.fix3 {
+	margin: 20px 0 4px 0;
+	max-width: 140px;
+}
+
+.fix4 {
+	margin: 0 0 5px 0;
+}
+
+.fix5 {
+	margin: 0 0 7px 0;
+}
+
+.profession {
+	text-transform: lowercase;
 }
 
 .years {
@@ -125,24 +176,28 @@
 
 .aboutme {
 	display: flex;
+	margin: 15px 0 0 37px;
 }
 
 .about-me-container {
 	display: flex;
-	padding: 40px;
+	margin: 30px 0 0 55px;
 }
 
 .aboutme-text {
-	max-width: 400px;
+	max-width: 500px;
+	padding: 0 10px 0 0;
 }
 
 .row {
 	display: flex;
+	margin: 25px 0 0 55px;
 }
 
 .column {
 	flex: 50%;
-	padding: 40px;
+	max-width: 250px;
+	margin: 24px 130px 0 0;
 }
 
 .otstup {
@@ -151,17 +206,22 @@
 
 .works {
 	background: #d1bac8;
+	margin: 57px 0 0 0;
+	padding: 0 0 18px 0;
 }
 
 .latest-works {
 	text-align: center;
+	padding: 57px 0 0 0;
 }
 
 .images {
 	display: flex;
 	justify-content: space-around;
 	list-style: none;
-	padding: 0 15px 50px 15px;
+	padding: 42px 0 50px 5px;
+	max-width: 1150px;
+	margin: 0 auto;
 }
 
 .work-image {
@@ -171,30 +231,46 @@
 
 .portfolio-item {
 	position: relative;
+	height: 234px;
+}
+
+.portfolio-item:hover {
+	cursor: pointer;
+}
+
+.portfolio-item:hover .portfolio-hover {
+	opacity: 1;
+}
+
+.portfolio-item:hover::before {
+	opacity: 1;
 }
 
 .portfolio-item::before {
-     content:'';
-     background: rgba(255, 255, 255, 0.5);
-     display: block;
-     position: absolute;
-     width: 100%;
-	 height: 100%;
+	content:'';
+	background: rgba(255, 255, 255, 0.5);
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all 2s;
 }
 
 .portfolio-hover {
 	position: absolute;
 	width: 100%;
 	bottom: 0;
-	padding-left: 39px;
-	padding-bottom: 17px;
+	padding: 0 0 15px 40px;
+	opacity: 0;
+	transition: all 2s;
 }
 
 .portfolio-link {
 	font-size: 12px;
 	font-weight: 600;
 	line-height: 1.5;
-	letter-spacing: 0.48px;
+	letter-spacing: 0.4px;
 }
 
 .portfolio-hover-text {
@@ -205,19 +281,12 @@
 	letter-spacing: 3px;
 }
 
-.input {
-	border: none;
-	border-bottom: 5px solid rgba(0, 0, 0, 0.5);
-	text-transform: uppercase;
-	font-size: 12px;
-	font-weight: 600;
-	line-height: 2.8;
-	letter-spacing: 2.16px;
-	width: 350px;
-	height: 40px;
+.drop-me {
+	text-align: center;
+	padding: 35px 0 0 0;
 }
 
-.textarea {
+.input, .textarea {
 	border: none;
 	border-bottom: 5px solid rgba(0, 0, 0, 0.5);
 	text-transform: uppercase;
@@ -225,12 +294,25 @@
 	font-weight: 600;
 	line-height: 2.8;
 	letter-spacing: 2.16px;
-	width: 350px;
-	height: 132px;
+	width: 358px;
+	height: 30px;
+	margin: 29px 0 0 5px;
+}
+
+.message {
+	height: 164px;
+}
+
+.input:focus {
+	outline: none;
+}
+
+.textarea:focus {
+	outline: none;
 }
 
 .main-section {
-    max-width: 752px;
+	max-width: 800px;
 	margin: 0 auto;
 	display: flex;
 }
@@ -240,16 +322,22 @@
 }
 
 .form-column {
-	padding: 30px;
+	padding: 43px 26px 0 30px;
 }
 
-.send {
-	border: 2px solid #000000;
-	background: #000000;
-	}
+.form-message{
+	padding: 39px 10px 0 15px;
+}
 
 .form-button {
 	text-align: center;
+	margin: 5px 0 42px 45px;
 }
 
-	
+.send {
+	width: 210px;
+	height: 40px;
+	border: 2px solid #000000;
+	background: #000000;
+}
+
