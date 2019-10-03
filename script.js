@@ -1,0 +1,11 @@
+   var X;
+   var Y;
+   X=prompt("Введите первое число");
+   Y=prompt("Введите второе число");
+   X=parseInt(X, 10);
+   Y=parseInt(Y, 10);
+   if (isNaN(X)) alert("Первое число введено неккоректно");
+   if (isNaN(Y)) alert("Второе число введено неккоректно");
+   var SUM;
+   SUM=X+Y;
+   alert(SUM);
