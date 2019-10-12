@@ -307,6 +307,14 @@
 	padding: 35px 0 0 0;
 }
 
+.info {
+	text-align: center;
+	padding: 20px 0 0 0;
+	color: #0a0fa3;
+    font-size: 16px;
+    font-weight: 600;
+}
+
 .input, .textarea {
 	border: none;
 	border-bottom: 5px solid rgba(0, 0, 0, 0.5);
@@ -343,11 +351,11 @@
 }
 
 .form-column {
-	padding: 43px 26px 0 30px;
+	padding: 23px 26px 0 30px;
 }
 
 .form-message{
-	padding: 39px 10px 0 15px;
+	padding: 19px 10px 0 15px;
 }
 
 .form-button {
