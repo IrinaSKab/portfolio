@@ -157,13 +157,13 @@
 	margin: 0;
 }
 
-.subtitle__profession {
+.subtitle-profession {
 	text-transform: lowercase;
 	font-size: 12px;
 	letter-spacing: 0.5px;
 }
 
-.subtitle__text {
+.subtitle-text {
 	font-size: 12px;
 	color: rgba(0, 0, 0, 0.7);
 	font-weight: 600;
@@ -172,24 +172,24 @@
 	margin: 0;
 }
 
-.subtitle__text_top {
+.subtitle-top {
 	margin: 24px 0 4px 0;
 }
 
-.subtitle__text_bottom {
+.subtitle-bottom {
 	margin: 0 0 12px 0;
 }
 
-.subtitle__text_width {
+.subtitle-width {
 	margin: 20px 0 4px 0;
 	max-width: 140px;
 }
 
-.subtitle__text_fix {
+.subtitle-fix {
 	margin: 0 0 5px 0;
 }
 
-.subtitle__text_center {
+.subtitle-center {
 	text-align: center;
 	padding: 35px 0 0 0;
 }
@@ -238,10 +238,6 @@
 	padding: 57px 0 0 0;
 }
 
-.works__title_bottom{
-	margin: 0 0 12px 0;
-}
-
 .works__pictures {
 	display: flex;
 	justify-content: space-around;
@@ -265,7 +261,7 @@
 	cursor: pointer;
 }
 
-.works__item:hover .work__image_hover {
+.works__item:hover .works__hover {
 	opacity: 1;
 }
 
@@ -284,7 +280,7 @@
 	transition: all 2s;
 }
 
-.works__image_hover {
+.works__hover {
 	position: absolute;
 	width: 100%;
 	bottom: 0;
@@ -293,14 +289,14 @@
 	transition: all 2s;
 }
 
-.works__image_link {
+.works__link {
 	font-size: 12px;
 	font-weight: 600;
 	line-height: 1.5;
 	letter-spacing: 0.4px;
 }
 
-.works__image_text {
+.works__text {
 	font-size: 20px;
 	text-transform: uppercase;
 	font-weight: 600;
